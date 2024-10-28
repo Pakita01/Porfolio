@@ -1,0 +1,360 @@
+body{
+    font-family: "Rancho", cursive;
+    background:radial-gradient(circle at top right,rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+#presentacion{
+    background:linear-gradient( aquamarine, rgb(140, 35, 35),);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+#bio{ 
+    justify-content: space-between;
+    background:radial-gradient(circle at top right, aquamarine,rgb(236, 236, 236));
+    align-items: center;
+    margin-top: 0rem;
+    border-radius: 10px;
+    border: solid yellow;
+}
+.identiad{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 10px;
+    border:solid yellow;
+    margin-left: 0.5rem;
+    position: relative;
+    bottom:1rem;
+    left: 6rem;
+}
+#soy{
+    text-align: justify;
+   margin-right: 2rem;
+    margin-left:2rem ;
+    
+}
+#especial{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    height: 1.5rem;
+    background:linear-gradient( rgb(140, 35, 35), #f5a300);
+    animation: animate_one 2s linear infinite;
+    animation-delay:  1s;
+}
+@keyframes animate_one{
+    0%{
+        transform: translateX(-5%);
+    }
+    5%{
+        transform: translateX(5%);
+    }
+}
+
+#portfolio{
+    background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(231, 255, 14),rgb(255, 255, 255));
+    height: 18rem;
+}
+.foto{
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    margin-top:0.1rem ;
+    margin-right:0.5rem ;
+    width: 4rem;
+    position: relative;
+    right:2.5rem;
+    bottom: -0.1rem;
+    box-shadow:5px 5px 10px 2px #888888;
+    border:solid yellow 2px;
+    filter: brightness(20px);
+    
+}
+.ecomerce-image{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    margin-top:0.1rem ;
+    margin-right:0.5rem ;
+    width: 6rem;
+    position: relative;
+    right:3.5rem;
+    top:0.5rem;
+    box-shadow:5px 5px 10px 2px #888888;
+    border:solid yellow 2px;
+    filter: brightness(20px);
+    
+}
+.progam-image{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    margin-top:0.1rem ;
+    margin-right:0.5rem ;
+    width: 6rem;
+    position: relative;
+    right:3rem;
+    top:0.7rem;
+    box-shadow:5px 5px 10px 2px #888888;
+    border:solid yellow;
+}
+
+.info-image{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    margin-top:0.1rem ;
+    margin-right:0.5rem ;
+    width: 6rem;
+    position: relative;
+    right:3rem;
+    top:0.8rem;
+    box-shadow:5px 5px 10px 2px #888888;
+    border:none;
+}
+
+#container{
+    height: 5rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid  orange;
+    text-align: center;
+}
+.tel-btn-icon{
+    width: 2rem;
+    height: 1.5rem;
+    color: rgb(21, 124, 0);
+    background-color: transparent;
+}
+#tel-btn{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+.mail-btn-icon{
+    width: 2rem;
+    height: 1.5rem;
+    color: rgb(58, 58, 222);
+    background-color: transparent;
+}
+#mail-btn{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+
+#idiomas{
+    width: 8rem;
+}
+#contact{
+    width: 14rem;
+    
+}
+
+.cv-btn-icon{
+    width: 2rem;
+    height: 1.5rem;
+    color: rgb(72, 135, 0);
+    background-color: transparent;
+}
+.cv-btn-icon:active{background-color: aquamarine;transform:translateY(2px);}
+#cv-btn{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+}
+#footer{
+    background:radial-gradient(circle at top right, aquamarine, rgb(115, 194, 239),aquamarine);
+    display: flex;
+    justify-content: space-between;
+    height: 0.5rem;
+    border: solid white;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-family: "Rancho", cursive;
+        background:radial-gradient(circle at top right,rgb(255, 255, 255),rgb(255, 175, 15),rgb(255, 255, 255));
+    }
+    
+    #presentacion{
+        /*background:radial-gradient(circle at top right, aquamarine,rgb(141, 255, 146));*/
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: aliceblue;
+    
+    }
+    #bio{
+        display: flex;
+        justify-content: space-between;
+        background:radial-gradient(circle at top right, aquamarine,rgb(236, 236, 236));
+        align-items: center;
+        margin-top: 0rem;
+        border-radius: 10px;
+    }
+    .identiad{
+        height: 8rem;
+        width: 8rem;
+        border-radius: 10px;
+        border:solid yellow;
+        margin-left: 2rem;
+        position: relative;
+        top: 1rem;
+        left: -1rem;
+    }
+    #soy{
+        text-align: justify;
+       margin-right: 2rem;
+        margin-left:2rem ;
+        
+    }
+    #text1{
+        width: 40rem;
+        text-align: justify;
+        margin-left:2rem ;
+        margin-right: 2rem;
+        background-color: #888888;
+    
+    }
+    #portfolio{
+        /*background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));*/
+        height: 18rem;
+        background-color: white;
+        border: solid black;
+        border-radius: 10px;
+        
+    }
+    .foto{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        margin-top:0.1rem ;
+        margin-right:0.5rem ;
+        width: 24rem;
+        position: relative;
+        right:8.5rem;
+        top:0.5rem;
+        box-shadow:5px 5px 10px 2px #888888;
+        border: none;
+        filter: brightness(20px);
+        border: solid yellow;
+        
+    }
+    .ecomerce-image{
+        display: flex;
+        justify-content: space-between;
+        height: 8rem;
+        margin-top:0.1rem ;
+        margin-right:0.5rem ;
+        width: 26rem;
+        position: relative;
+        left:7rem;
+        top:-2.5rem;
+        box-shadow:5px 5px 10px 2px #888888;
+        border: none;
+        filter: brightness(20px);
+        border: solid black;
+        
+    }
+    .progam-image{
+        display: flex;
+        justify-content: space-between;
+        height: 8rem;
+        margin-top:0.1rem ;
+        margin-right:0.5rem ;
+        width: 26rem;
+        position: relative;
+        right:14rem;
+        top:-3rem;
+        box-shadow:5px 5px 10px 2px #888888;
+        border: none;
+    }
+    
+    .info-image{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        margin-top:0.1rem ;
+        margin-right:0.5rem ;
+        width: 22rem;
+        position: relative;
+        left:5.5rem;
+        top:-5.9rem;
+        border: none;
+    }
+    
+    #container{
+        height: 5rem;
+        background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(142, 255, 253),rgb(255, 255, 255));
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 5px;
+        border: solid  rgb(255, 255, 255);
+        text-align: center;
+    }
+    .tel-btn-icon{
+        width: 2rem;
+        height: 1.5rem;
+        color: rgb(21, 124, 0);
+        background-color: transparent;
+    }
+    #tel-btn{
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        border: none;
+        display: flex;
+    }
+    .mail-btn-icon{
+        width: 2rem;
+        height: 1.5rem;
+        color: rgb(58, 58, 222);
+        background-color: transparent;
+    }
+    #mail-btn{
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        border: none;
+        display: flex;
+    }
+    
+    #idiomas{
+        width: 8rem;
+    }
+    #contact{
+        width: 14rem;
+        
+    }
+    
+    .cv-btn-icon{
+        width: 2rem;
+        height: 1.5rem;
+        color: rgb(72, 135, 0);
+        background-color: transparent;
+    }
+    .cv-btn-icon:active{background-color: aquamarine;transform:translateY(2px);}
+    #cv-btn{
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        border: none;
+    }
+    #footer{
+        background:radial-gradient(circle at top right, aquamarine, rgb(115, 194, 239),aquamarine);
+        display: flex;
+        justify-content: space-between;
+        height: 0.5rem;
+        border: solid white;
+
+    }
+}
