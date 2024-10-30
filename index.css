@@ -1,360 +1,130 @@
-body{
-    font-family: "Rancho", cursive;
-    background:radial-gradient(circle at top right,rgb(255, 255, 255), rgb(255, 255, 255));
+
+body,html {
+  margin: 0;
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #ffffff;
+}
+ul { 
+  margin: 20px auto 0; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 705px;
+  text-align:center;
+  background-color: rgb(0, 0, 0);
+  
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
-#presentacion{
-    background:linear-gradient( aquamarine, rgb(140, 35, 35),);
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-
+.item1{
+  size: 4rem;
+  text-shadow: 5px 5px 10px blue;
+  color: #000000;
+  justify-items: center;
 }
-
-#bio{ 
-    justify-content: space-between;
-    background:radial-gradient(circle at top right, aquamarine,rgb(236, 236, 236));
-    align-items: center;
-    margin-top: 0rem;
-    border-radius: 10px;
-    border: solid yellow;
+.item2{
+  display: flex;
+  justify-content:space-between;
+  width: 50rem;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  padding: 0.2rem;
 }
-.identiad{
-    height: 8rem;
-    width: 8rem;
-    border-radius: 10px;
-    border:solid yellow;
-    margin-left: 0.5rem;
-    position: relative;
-    bottom:1rem;
-    left: 6rem;
+.img{
+  height: 8rem;
+  width: 7em;
+  border-top-right-radius: 10px;
+  box-shadow: 5px 5px 10px blue;
+  padding-right:0.1rem;
+  margin-left: 2rem;
+  color: #fff;
+  margin-right: 4rem;
+   
 }
-#soy{
-    text-align: justify;
-   margin-right: 2rem;
-    margin-left:2rem ;
-    
+.text{
+  text-align: justify;
+  height: 4rem;
+  width: 36;
+  color: #fff;
+  
+  
 }
-#especial{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    height: 1.5rem;
-    background:linear-gradient( rgb(140, 35, 35), #f5a300);
-    animation: animate_one 2s linear infinite;
-    animation-delay:  1s;
-}
-@keyframes animate_one{
-    0%{
-        transform: translateX(-5%);
-    }
-    5%{
-        transform: translateX(5%);
-    }
-}
-
-#portfolio{
-    background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(231, 255, 14),rgb(255, 255, 255));
-    height: 18rem;
-}
-.foto{
-    display: flex;
-    justify-content: space-between;
-    height: 3rem;
-    margin-top:0.1rem ;
-    margin-right:0.5rem ;
-    width: 4rem;
-    position: relative;
-    right:2.5rem;
-    bottom: -0.1rem;
-    box-shadow:5px 5px 10px 2px #888888;
-    border:solid yellow 2px;
-    filter: brightness(20px);
-    
-}
-.ecomerce-image{
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    margin-top:0.1rem ;
-    margin-right:0.5rem ;
-    width: 6rem;
-    position: relative;
-    right:3.5rem;
-    top:0.5rem;
-    box-shadow:5px 5px 10px 2px #888888;
-    border:solid yellow 2px;
-    filter: brightness(20px);
-    
-}
-.progam-image{
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    margin-top:0.1rem ;
-    margin-right:0.5rem ;
-    width: 6rem;
-    position: relative;
-    right:3rem;
-    top:0.7rem;
-    box-shadow:5px 5px 10px 2px #888888;
-    border:solid yellow;
-}
-
-.info-image{
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    margin-top:0.1rem ;
-    margin-right:0.5rem ;
-    width: 6rem;
-    position: relative;
-    right:3rem;
-    top:0.8rem;
-    box-shadow:5px 5px 10px 2px #888888;
-    border:none;
-}
-
 #container{
-    height: 5rem;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 10px;
-    border: solid  orange;
-    text-align: center;
-}
-.tel-btn-icon{
-    width: 2rem;
-    height: 1.5rem;
-    color: rgb(21, 124, 0);
-    background-color: transparent;
-}
-#tel-btn{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: none;
-    display: flex;
-}
-.mail-btn-icon{
-    width: 2rem;
-    height: 1.5rem;
-    color: rgb(58, 58, 222);
-    background-color: transparent;
-}
-#mail-btn{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: none;
-    display: flex;
+  background-color: black;
+  height: 2rem;
+  width: 705px;
+  color: #fff;
+  justify-items: center;
+  text-shadow: 5px 5px 10px blue;
+  
 }
 
-#idiomas{
-    width: 8rem;
+.portfolio{
+  height:10;
+  width: 45rem;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px blue;
+  margin-top: 1rem;
+}
+#content{
+  padding: 0.2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  height: 4rem;
+  width: 705px;
+  align-content: center;
+  
 }
 #contact{
-    width: 14rem;
-    
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 1rem;
 }
 
-.cv-btn-icon{
-    width: 2rem;
-    height: 1.5rem;
-    color: rgb(72, 135, 0);
-    background-color: transparent;
-}
-.cv-btn-icon:active{background-color: aquamarine;transform:translateY(2px);}
-#cv-btn{
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    border: none;
-}
-#footer{
-    background:radial-gradient(circle at top right, aquamarine, rgb(115, 194, 239),aquamarine);
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+  .item2{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .portfolio{
     display: flex;
     justify-content: space-between;
-    height: 0.5rem;
-    border: solid white;
-}
-
-@media (min-width: 768px) {
-    body{
-        font-family: "Rancho", cursive;
-        background:radial-gradient(circle at top right,rgb(255, 255, 255),rgb(255, 175, 15),rgb(255, 255, 255));
-    }
     
-    #presentacion{
-        /*background:radial-gradient(circle at top right, aquamarine,rgb(141, 255, 146));*/
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background-color: aliceblue;
-    
-    }
-    #bio{
-        display: flex;
-        justify-content: space-between;
-        background:radial-gradient(circle at top right, aquamarine,rgb(236, 236, 236));
-        align-items: center;
-        margin-top: 0rem;
-        border-radius: 10px;
-    }
-    .identiad{
-        height: 8rem;
-        width: 8rem;
-        border-radius: 10px;
-        border:solid yellow;
-        margin-left: 2rem;
-        position: relative;
-        top: 1rem;
-        left: -1rem;
-    }
-    #soy{
-        text-align: justify;
-       margin-right: 2rem;
-        margin-left:2rem ;
-        
-    }
-    #text1{
-        width: 40rem;
-        text-align: justify;
-        margin-left:2rem ;
-        margin-right: 2rem;
-        background-color: #888888;
-    
-    }
-    #portfolio{
-        /*background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(255, 255, 255),rgb(255, 255, 255));*/
-        height: 18rem;
-        background-color: white;
-        border: solid black;
-        border-radius: 10px;
-        
-    }
-    .foto{
-        display: flex;
-        justify-content: space-between;
-        height: 6rem;
-        margin-top:0.1rem ;
-        margin-right:0.5rem ;
-        width: 24rem;
-        position: relative;
-        right:8.5rem;
-        top:0.5rem;
-        box-shadow:5px 5px 10px 2px #888888;
-        border: none;
-        filter: brightness(20px);
-        border: solid yellow;
-        
-    }
-    .ecomerce-image{
-        display: flex;
-        justify-content: space-between;
-        height: 8rem;
-        margin-top:0.1rem ;
-        margin-right:0.5rem ;
-        width: 26rem;
-        position: relative;
-        left:7rem;
-        top:-2.5rem;
-        box-shadow:5px 5px 10px 2px #888888;
-        border: none;
-        filter: brightness(20px);
-        border: solid black;
-        
-    }
-    .progam-image{
-        display: flex;
-        justify-content: space-between;
-        height: 8rem;
-        margin-top:0.1rem ;
-        margin-right:0.5rem ;
-        width: 26rem;
-        position: relative;
-        right:14rem;
-        top:-3rem;
-        box-shadow:5px 5px 10px 2px #888888;
-        border: none;
-    }
-    
-    .info-image{
-        display: flex;
-        justify-content: space-between;
-        height: 6rem;
-        margin-top:0.1rem ;
-        margin-right:0.5rem ;
-        width: 22rem;
-        position: relative;
-        left:5.5rem;
-        top:-5.9rem;
-        border: none;
-    }
-    
-    #container{
-        height: 5rem;
-        background:radial-gradient(circle at top right, rgb(255, 255, 255), rgb(142, 255, 253),rgb(255, 255, 255));
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        border-radius: 5px;
-        border: solid  rgb(255, 255, 255);
-        text-align: center;
-    }
-    .tel-btn-icon{
-        width: 2rem;
-        height: 1.5rem;
-        color: rgb(21, 124, 0);
-        background-color: transparent;
-    }
-    #tel-btn{
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        border: none;
-        display: flex;
-    }
-    .mail-btn-icon{
-        width: 2rem;
-        height: 1.5rem;
-        color: rgb(58, 58, 222);
-        background-color: transparent;
-    }
-    #mail-btn{
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        border: none;
-        display: flex;
-    }
-    
-    #idiomas{
-        width: 8rem;
-    }
-    #contact{
-        width: 14rem;
-        
-    }
-    
-    .cv-btn-icon{
-        width: 2rem;
-        height: 1.5rem;
-        color: rgb(72, 135, 0);
-        background-color: transparent;
-    }
-    .cv-btn-icon:active{background-color: aquamarine;transform:translateY(2px);}
-    #cv-btn{
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        border: none;
-    }
-    #footer{
-        background:radial-gradient(circle at top right, aquamarine, rgb(115, 194, 239),aquamarine);
-        display: flex;
-        justify-content: space-between;
-        height: 0.5rem;
-        border: solid white;
-
-    }
+    width: 85%;
+  }
 }
